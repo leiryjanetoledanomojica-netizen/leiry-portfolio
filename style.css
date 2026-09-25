@@ -1,0 +1,970 @@
+/* =====================================================
+   LEIRY JANE TOLEDANO MOJICA
+   PERSONAL PORTFOLIO
+   PURPLE THEME
+===================================================== */
+
+
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #faf7ff;
+    color: #29232f;
+    line-height: 1.7;
+}
+
+
+/* ================= COLORS ================= */
+
+:root {
+    --light-purple: #faf7ff;
+    --soft-purple: #eee2ff;
+    --purple: #9b6dcc;
+    --medium-purple: #8555b8;
+    --dark-purple: #6b3fa0;
+    --deep-purple: #3f245c;
+
+    --text: #29232f;
+    --gray: #766d7d;
+    --white: #ffffff;
+
+    --border: #e4d5f2;
+
+    --shadow: 0 15px 40px rgba(86, 52, 116, 0.12);
+}
+
+
+/* ================= NAVIGATION ================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    background: rgba(250, 247, 255, 0.96);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid var(--border);
+}
+
+
+nav {
+    width: 90%;
+    max-width: 1150px;
+
+    height: 75px;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+
+    color: var(--purple);
+}
+
+
+nav ul {
+    display: flex;
+
+    list-style: none;
+
+    gap: 30px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+
+    color: #4d4355;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+
+nav ul li a:hover {
+    color: var(--purple);
+}
+
+
+/* =====================================================
+   HOME
+===================================================== */
+
+.home {
+
+    min-height: 100vh;
+
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding-top: 110px;
+    padding-bottom: 60px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 70px;
+}
+
+
+/* ================= HOME TEXT ================= */
+
+.home-text {
+
+    flex: 1;
+
+    max-width: 620px;
+}
+
+
+.hello {
+
+    color: var(--purple);
+
+    letter-spacing: 3px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+
+.home h1 {
+
+    font-size: 60px;
+
+    line-height: 1.1;
+
+    margin: 10px 0 20px;
+
+    color: var(--text);
+}
+
+
+.home h1 span {
+
+    color: var(--purple);
+}
+
+
+.home h2 {
+
+    font-size: 19px;
+
+    font-weight: 500;
+
+    margin-bottom: 20px;
+}
+
+
+.description {
+
+    color: var(--gray);
+
+    max-width: 550px;
+
+    font-size: 15px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.button {
+
+    display: inline-block;
+
+    margin-top: 28px;
+
+    padding: 13px 25px;
+
+    background: var(--purple);
+
+    color: white;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.button:hover {
+
+    background: var(--dark-purple);
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(107, 63, 160, 0.25);
+}
+
+
+/* =====================================================
+   PHOTO
+===================================================== */
+
+/*
+   IMPORTANT:
+   This uses a completely new class name.
+   It will not conflict with the old .profile CSS.
+*/
+
+
+.photo-container {
+
+    width: 430px;
+
+    height: 430px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: linear-gradient(
+        145deg,
+        #d9bff5,
+        #f1e7ff
+    );
+
+    border-radius: 50%;
+
+    box-shadow: var(--shadow);
+}
+
+
+/* ================= PHOTO CIRCLE ================= */
+
+.photo-circle {
+
+    width: 350px;
+
+    height: 350px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    border: 10px solid white;
+
+    background: white;
+
+    box-shadow:
+        0 10px 30px rgba(86, 52, 116, 0.20);
+}
+
+
+/* ================= PHOTO ================= */
+
+.photo-circle img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+}
+
+
+/* =====================================================
+   GENERAL SECTIONS
+===================================================== */
+
+.section {
+
+    padding: 100px 5%;
+}
+
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+
+.section-title p {
+
+    color: var(--purple);
+
+    letter-spacing: 3px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+.section-title h2 {
+
+    color: var(--deep-purple);
+
+    font-size: 40px;
+
+    margin-top: 5px;
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about-container {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+
+.about-card {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 22px;
+
+    border: 1px solid var(--border);
+
+    box-shadow: 0 8px 25px rgba(86, 52, 116, 0.05);
+}
+
+
+.about-card h3 {
+
+    color: var(--dark-purple);
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+
+.about-card p {
+
+    color: var(--gray);
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   HOBBIES
+===================================================== */
+
+.hobbies-section {
+
+    background: var(--soft-purple);
+}
+
+
+.hobbies {
+
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.hobby-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 22px;
+
+    border: 1px solid var(--border);
+
+    transition: 0.3s;
+}
+
+
+.hobby-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow: var(--shadow);
+}
+
+
+.icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    background: var(--soft-purple);
+
+    border-radius: 15px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+
+.hobby-card h3 {
+
+    color: var(--deep-purple);
+
+    margin: 12px 0 8px;
+}
+
+
+.hobby-card p {
+
+    color: var(--gray);
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   IT JOURNEY
+===================================================== */
+
+.journey-box {
+
+    max-width: 950px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    border: 1px solid var(--border);
+
+    display: grid;
+
+    grid-template-columns: 100px 1fr;
+
+    gap: 30px;
+
+    box-shadow: 0 8px 25px rgba(86, 52, 116, 0.05);
+}
+
+
+.journey-number {
+
+    color: var(--purple);
+
+    font-size: 30px;
+
+    font-weight: 700;
+}
+
+
+.journey-box h3 {
+
+    color: var(--dark-purple);
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+
+
+.journey-box p {
+
+    color: var(--gray);
+
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   GOALS
+===================================================== */
+
+.goals-section {
+
+    background: var(--soft-purple);
+}
+
+
+.goal-container {
+
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.goal-card {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 23px;
+
+    border: 1px solid var(--border);
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+
+.goal-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow: var(--shadow);
+}
+
+
+.goal-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    background: var(--soft-purple);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 30px;
+
+    margin: auto;
+}
+
+
+.goal-card h3 {
+
+    color: var(--dark-purple);
+
+    margin: 15px 0 10px;
+}
+
+
+.goal-card p {
+
+    color: var(--gray);
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   QUOTE
+===================================================== */
+
+.quote {
+
+    padding: 100px 5%;
+
+    background: linear-gradient(
+        135deg,
+        var(--dark-purple),
+        var(--purple)
+    );
+
+    color: white;
+
+    text-align: center;
+}
+
+
+.quote p {
+
+    font-size: 28px;
+
+    font-weight: 500;
+
+    max-width: 750px;
+
+    margin: auto;
+}
+
+
+.quote span {
+
+    display: block;
+
+    margin-top: 15px;
+
+    color: #eadcff;
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact {
+
+    padding: 100px 5%;
+
+    text-align: center;
+
+    background: var(--light-purple);
+}
+
+
+.contact h2 {
+
+    color: var(--deep-purple);
+
+    font-size: 40px;
+
+    margin: 10px 0;
+}
+
+
+.contact > p:not(.hello) {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: var(--gray);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    padding: 25px;
+
+    text-align: center;
+
+    background: var(--deep-purple);
+
+    color: #dfd1e8;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 950px) {
+
+    .home {
+
+        gap: 35px;
+    }
+
+
+    .home h1 {
+
+        font-size: 48px;
+    }
+
+
+    .photo-container {
+
+        width: 350px;
+
+        height: 350px;
+    }
+
+
+    .photo-circle {
+
+        width: 285px;
+
+        height: 285px;
+    }
+
+
+    nav ul {
+
+        gap: 15px;
+    }
+
+}
+
+
+/* =====================================================
+   TABLET / SMALL SCREEN
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .home {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-top: 130px;
+
+        gap: 50px;
+    }
+
+
+    .home-text {
+
+        max-width: 650px;
+    }
+
+
+    .description {
+
+        margin: auto;
+    }
+
+
+    .photo-container {
+
+        width: 350px;
+
+        height: 350px;
+    }
+
+
+    .photo-circle {
+
+        width: 280px;
+
+        height: 280px;
+    }
+
+
+    .about-container {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .hobbies {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .goal-container {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .journey-box {
+
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    nav {
+
+        height: auto;
+
+        padding: 18px 0;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    nav ul {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 12px;
+    }
+
+
+    .home {
+
+        width: 90%;
+
+        padding-top: 180px;
+
+        padding-bottom: 60px;
+    }
+
+
+    .home h1 {
+
+        font-size: 38px;
+    }
+
+
+    .home h2 {
+
+        font-size: 17px;
+    }
+
+
+    .photo-container {
+
+        width: 280px;
+
+        height: 280px;
+    }
+
+
+    .photo-circle {
+
+        width: 220px;
+
+        height: 220px;
+
+        border-width: 7px;
+    }
+
+
+    .section {
+
+        padding: 75px 5%;
+    }
+
+
+    .section-title h2 {
+
+        font-size: 32px;
+    }
+
+
+    .hobbies {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .journey-box {
+
+        padding: 25px;
+    }
+
+
+    .journey-box h3 {
+
+        font-size: 20px;
+    }
+
+
+    .quote {
+
+        padding: 75px 5%;
+    }
+
+
+    .quote p {
+
+        font-size: 21px;
+    }
+
+
+    .contact {
+
+        padding: 75px 5%;
+    }
+
+
+    .contact h2 {
+
+        font-size: 30px;
+    }
+
+
+    footer {
+
+        font-size: 11px;
+    }
+
+}
